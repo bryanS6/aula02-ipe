@@ -2,8 +2,8 @@ print("MEDIDOR DE CONSUMO")
 
 marca = input("forneça a marca do veiculo: ")
 modelo = input("forneça o modelo do veiculo:")
-km = int(input("km's percorridos: "))
-lts = int(input("quantidade de litros gastos: "))
+km = float(input("km's percorridos: "))
+lts = float(input("quantidade de litros gastos: "))
 
 consumo = km / lts
 
