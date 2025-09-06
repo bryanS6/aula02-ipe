@@ -13,16 +13,16 @@ peso = float(input("Insira seu peso em kg: "))
 altura = float(input("Insira sua altura em metros: "))
 
 
-try:
+try: 
     imc = peso / (altura * altura) 
-if imc <= 18.5:
-    print(f"{nome} seu IMC é de: {imc} portanto, você está abaixo do peso")
-elif imc <= 24.9:
-    print(f"{nome} seu IMC é de: {imc} portanto, você está dentro do peso ideal")
-elif imc <= 29.9:
-    print(f"{nome} seu IMC é de: {imc} portanto, você está com sobrepeso")
-else:
-    print(f"{nome} seu IMC é de: {imc} portanto, você está com obesidade")
+    if imc <= 18.5:
+        print(f"{nome} seu IMC é de: {imc} portanto, você está abaixo do peso")
+    elif imc <= 24.9:
+        print(f"{nome} seu IMC é de: {imc} portanto, você está dentro do peso ideal")
+    elif imc <= 29.9:
+        print(f"{nome} seu IMC é de: {imc} portanto, você está com sobrepeso")
+    else:
+         print(f"{nome} seu IMC é de: {imc} portanto, você está com obesidade")
 except ZeroDivisionError:
     print("O programa não é capaz de dividir por zero!")
 
